@@ -1,0 +1,431 @@
+.mainPg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: saturate(100%);
+    margin-top: -50px;
+    position: relative;
+}
+
+.introContainer {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: var(--white) !important;
+    font-family: var(--font);
+}
+
+.typewritter {
+    max-width: 75%;
+    height: 100px;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+    font-size: 25px;
+}
+
+.scrollDown {
+    margin-top: 50px;
+    height: 125px;
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollDown i {
+    position: absolute;
+    animation: scrolldown 5s infinite ease-in-out;
+}
+
+#about {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.headingCont {
+    width: 100%;
+    height: 150px;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: bolder;
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+}
+
+.headingCont h1 {
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aboutInfoContainer {
+    width: 100%;
+    padding: 0 var(--padding);
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.aboutInfoContainer>div {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.aboutInfoContainer .AboutImgContainer {
+    align-items: center;
+}
+
+.aboutInfoContainer div img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    resize: horizontal;
+}
+
+.aboutInfoContainer .AboutData {
+    padding: 0 20px;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background: red; */
+}
+
+.aboutInfoContainer .AboutData h3 {
+    /* line-height: 50px; */
+    height: 50px;
+    font-size: 18px;
+}
+
+.aboutInfoContainer .AboutData p {
+    line-height: 30px;
+}
+
+.aboutInfoContainer .AboutData .table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutInfoContainer .AboutData .table .side1,
+.aboutInfoContainer .AboutData .table .side2 {
+    width: 45%;
+    color: rgba(0, 0, 0, .5);
+}
+
+.aboutInfoContainer .AboutData .table .side1 .aboutSkills,
+.aboutInfoContainer .AboutData .table .side2 .aboutSkills {
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.aboutInfoContainer .AboutData .table .side1 .aboutSkills h3,
+.aboutInfoContainer .AboutData .table .side2 .aboutSkills h3 {
+    display: flex;
+    align-items: center;
+}
+
+.offerContainerMain {
+    font-family: var(--font);
+    padding: 0 var(--padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offerContainer {
+    display: flex;
+    width: 45%;
+    min-height: 125px;
+    margin: 30px 0;
+}
+
+.offerContainer .iconSide {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerContainer .iconSide div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    font-size: 25px;
+}
+
+.offerContainer .textSide {
+    width: calc(100% - 100px);
+    padding-left: 20px;
+}
+
+.offerContainer .textSide h3 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.offerContainer .textSide p,
+.offerContainer .textSide p a {
+    color: rgba(0, 0, 0, .5);
+}
+
+.workMainContainer {
+    background: #f5f5f5;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.imageContainer {
+    min-height: calc(100vh - 200px);
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imageContainer .images {
+    width: calc(100% / 3.5);
+    height: 45%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.imageContainer .images img {
+    width: 100%;
+    height: 100%;
+}
+
+.textSlider {
+    padding: 0 var(--padding);
+    width: 100%;
+}
+
+.contactSection {
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.contact {
+    width: 100%;
+    height: calc(100% - 200px);
+    padding: 0 var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.center div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center input,
+.center textarea {
+    border: 0;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.center div input {
+    width: 45%;
+}
+
+input[type=submit] {
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1470px) {
+    .aboutInfoContainer .AboutData .table {
+        display: block;
+        margin-top: 20px;
+    }
+    .aboutInfoContainer .AboutData .table .side1,
+    .aboutInfoContainer .AboutData .table .side2 {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .typewritter {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .socials {
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .aboutInfoContainer {
+        display: block;
+    }
+    .aboutInfoContainer>div {
+        width: 100%;
+    }
+    .aboutInfoContainer .AboutData {
+        padding: 0;
+        height: auto;
+        display: block;
+        aspect-ratio: auto;
+        margin-top: 20px;
+    }
+    .aboutInfoContainer .AboutData .table {
+        display: flex;
+    }
+    .aboutInfoContainer .AboutData .table .side1,
+    .aboutInfoContainer .AboutData .table .side2 {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .socials {
+        width: 20vw;
+    }
+    .offerContainer {
+        width: 100%;
+    }
+    .offerContainer .iconSide {
+        width: 75px;
+    }
+    .offerContainer .iconSide div {
+        width: 75px;
+        height: 75px;
+    }
+    .offerContainer .textSide {
+        width: calc(100% - 75px);
+    }
+    .offerContainer .textSide h3 {
+        margin-bottom: 15px;
+    }
+    .imageContainer .images {
+        width: calc(100% / 2.5);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainPg {
+        background-position: left;
+    }
+    .typewritter {
+        font-size: 30px;
+    }
+    .socials {
+        font-size: 20px;
+        width: 23vw;
+    }
+    .aboutInfoContainer .AboutData .table {
+        display: block;
+    }
+    .aboutInfoContainer .AboutData .table .side1,
+    .aboutInfoContainer .AboutData .table .side2 {
+        width: 75%;
+    }
+    .imageContainer .images {
+        width: calc(100% / 2.3);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .typewritter {
+        font-size: 25px;
+    }
+    .socials {
+        width: 30vw;
+    }
+    .work {
+        letter-spacing: 2px;
+    }
+    .imageContainer .images {
+        width: calc(100% / 2.1);
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .typewritter {
+        font-size: 20px;
+    }
+    .socials {
+        width: 45vw;
+    }
+    .scrollDown {
+        font-size: 30px;
+    }
+    .offerContainer .iconSide {
+        display: none;
+    }
+    .offerContainer .textSide {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@keyframes scrolldown {
+    0% {
+        bottom: 100%;
+        top: 0;
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        top: 100%;
+        bottom: 0 !important;
+        opacity: 0;
+    }
+}

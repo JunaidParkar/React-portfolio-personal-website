@@ -1,0 +1,24 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    font: var(--font);
+    color: rgba(0, 0, 0, .5);
+    margin-bottom: 50px;
+}
+
+.swiper-slide h4 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}

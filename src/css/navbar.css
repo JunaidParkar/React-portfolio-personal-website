@@ -1,0 +1,123 @@
+.navbar {
+    width: 100vw;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--padding);
+    text-transform: uppercase;
+    font-family: var(--font);
+    background: transparent;
+    color: var(--white) !important;
+    transition: background .5s ease-in-out;
+}
+
+.navbar.dark {
+    background: var(--black) !important;
+}
+
+.navbar.light {
+    background: transparent !important;
+}
+
+.brandContainer {
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.menus {
+    width: 50%;
+    height: 100%;
+}
+
+.menus ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menus ul li,
+.menus ul li a {
+    list-style-type: none;
+    font-style: normal;
+    color: var(--white);
+}
+
+#toggler {
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .menus {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #toggler {
+        display: flex;
+        width: auto;
+        height: 30%;
+        aspect-ratio: 3/1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .menus {
+        position: fixed;
+        height: 500px;
+        width: 50vw;
+        top: 50vh;
+        left: -51vw;
+        z-index: 99;
+        background: var(--black);
+        margin-top: -250px;
+        border-radius: 0 10px 10px 0;
+        transition: left 0.5s ease-in-out;
+    }
+    .menus ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #toggler .line1,
+    #toggler .line2,
+    #toggler .line3 {
+        width: 100%;
+        height: 2px;
+        border-radius: 10px;
+        background: var(--white);
+        transition: all .5s ease-in-out;
+    }
+    #toggler.hamburger .line1,
+    #toggler.hamburger .line2,
+    #toggler.hamburger .line3 {
+        width: 100%;
+        display: block;
+        transform: rotate(0deg) translate(0px);
+    }
+    #toggler.hamburger .line2 {
+        width: 75%;
+    }
+    #toggler.hamburger .line3 {
+        width: 50%;
+    }
+    #toggler.close .line2 {
+        width: 0;
+        height: 0;
+        /* display: none; */
+    }
+    #toggler.close .line1 {
+        width: 80%;
+        transform: rotate(45deg) translate(10px);
+    }
+    #toggler.close .line3 {
+        width: 80%;
+        transform: rotate(-45deg) translate(10px);
+    }
+}

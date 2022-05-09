@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+:root {
+    --white: white;
+    --off-white: #f5f5f5;
+    --font: 'Josefin Sans', sans-serif;
+    --light-black: rgba(0, 0, 0, 0.7);
+    --padding: 250px;
+    --black: black;
+}
+
+body,
+#root {
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media only screen and (max-width: 1450px) {
+     :root {
+        --padding: 150px
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+     :root {
+        --padding: 100px
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+     :root {
+        --padding: 30px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+     :root {
+        --padding: 20px
+    }
+}
+
+@media only screen and (max-width: 400px) {
+     :root {
+        --padding: 10px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+     :root {
+        --padding: 50px
+    }
+}
+
+@media only screen and (max-width: 400px) {
+     :root {
+        --padding: 10px
+    }
+}
